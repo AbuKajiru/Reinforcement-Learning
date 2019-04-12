@@ -10,25 +10,9 @@ NOTE:
 When in room A the computer(our agent in training) cannot access room (C and D) and vice-versa.
 When in room B the computer(our agent in training) cannot access room D and vice-versa.
 
-The room might look like this:
+The room might look like figure A in (Images.png)
 
-|-----------|-------------|  
-|           |             |
-|  ROOM B       ROOM C    |
-|                         |
-|-------    |--------     |  
-|           |             |
-|  ROOM A   |   ROOM D    |
-|           |             |
-|-----------|-------------|
-
-In order to represent the data in a reward matrix in the begininning I represented the dashes as shown below with (-1) in the arrays.
-
-State/Action    A   B   C   D
-    A           -   0   -   -
-    B           0   -   0   - 
-    C           -   0   -   100
-    D           -   -   0   100
+In order to represent the data in a reward matrix in the begininning I represented the dashes as shown in (Images.png - Figure B) with (-1) in the arrays
 
 In this case Room D is the goal state and any action that moves into the room is rewarded 100 and 0 otherwise and a (-) represents actions that cannot be allowed because of the non-existent doors.
 
